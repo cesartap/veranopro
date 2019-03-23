@@ -1,0 +1,2 @@
+# veranopro
+Prueba de IA
