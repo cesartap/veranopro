@@ -19,18 +19,18 @@ exports.handler = async (event, context, callback) => {
 
     const {
         id,
-        name,
-        otroCampo,
-        firstname
+        correo,
+        nombre,
+        telefono
     } = JSON.parse(event.body);
 
     const params = {
         TableName: "usuarios",
         Item: {
             id: id,
-            name: name,
-            otroCampo: otroCampo,
-            firstname: firstname
+            correo: correo,
+            nombre: nombre,
+            telefono: telefono
         }
     };
 
@@ -45,11 +45,9 @@ exports.handler = async (event, context, callback) => {
 
 
     const response = {
-        statusCode: statusCode,
-        body: responseBody,
-        headers: {
-            "myHeader": "test"
-        }
+        statusCode : statusCode,
+        body : responseBody,
+        headers: { "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token", "Access-Control-Allow-Origin": "*"}
     }
     return response;
 };
