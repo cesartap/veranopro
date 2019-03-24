@@ -1,0 +1,50 @@
+.bg {
+
+  background-image: url('./../assets/background-phone.jpg');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  color:white;
+  text-align: center;
+  margin-bottom: -25px;
+}
+
+h4{
+  color:white;
+  text-align: center;
+}
+
+mandar{
+  color: green;
+}
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: white; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 15px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+  margin-left: 20%;
+} 
+
+
+.active {
+  background-color: white; /* Add an active/current color */ 
+  background-image: url('./../assets/logo-opera.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

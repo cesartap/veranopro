@@ -1,0 +1,104 @@
+<div class="bg">
+  <!-- <div class="icon-bar">
+    <a class="active"><i class="fa fa-home"></i></a> 
+  </div>
+  <h1>
+    {{title1}} 
+    <br>
+    {{title2}}
+  </h1>
+  <br>
+  <h4>
+    {{subtitle}}
+  </h4>
+
+  <mat-form-field>
+    <input matInput placeholder="Simple Input" [(ngModel)]="title">
+  </mat-form-field>
+
+  <mat-icon>home</mat-icon>
+
+  <button mat-raised-button>I'm a button</button>
+
+  <mat-form-field>
+    <mat-select placeholder="I'm a select" [(ngModel)]="selectedValue">
+      <mat-option *ngFor="let item of items" [value]="item.value">
+        {{item.view}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+
+  <div class="icon-bar">
+    <a class="active"></a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col">
+        <h1>
+          {{title1}}
+        </h1>
+      </div>
+      
+    </div>
+
+    <br>
+    <div class="row">
+      
+      <div class="col">
+        <h4>
+          {{subtitle}}
+        </h4>
+      </div>
+      
+    </div>
+    <br>
+
+
+    <div class="row">
+
+      <div class="col">
+        
+          <!-- Grid row -->
+          <div class="form-row">
+            <!-- Default input -->
+            <div class="form-group col-md-6">
+              <label style="color: white" for="nombre">Nombre</label>
+              <input mdbInput type="text" class="form-control" id="nombre"  [(ngModel)]="nombre" placeholder="">
+            </div>
+            <!-- Default input -->
+            <div class="form-group col-md-6">
+              <label style="color: white" for="telefono">Telefono</label>
+              <input mdbInput type="text" class="form-control" id="telefono" [(ngModel)]="telefono" placeholder="">
+
+            </div>
+          </div>
+
+          <!-- Grid row -->
+          <div class="form-row">
+            <!-- Default input -->
+            <div class="form-group col-md-6">
+              <label style="color: white" for="email">Email</label>
+              <input mdbInput type="ext" class="form-control" id="email" [(ngModel)]="correo" placeholder="">
+
+            </div>
+            <!-- Default input -->
+            <div class="form-group col-md-6">
+              <label style="color: white" for="rut">Rut</label>
+              <input mdbInput type="text" class="form-control" id="rut" [(ngModel)]="rut" placeholder="">
+
+            </div>
+          </div>
+
+          <!-- Grid row -->
+          <button type="submit" id="mandar" class="btn btn-primary col-md-12 btn-success" (click)="validate()" >Inscribirse</button>
+        
+      </div>
+
+      
+
+    </div>
+  </div>
+  <router-outlet></router-outlet>
